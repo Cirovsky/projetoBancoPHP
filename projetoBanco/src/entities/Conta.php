@@ -1,9 +1,11 @@
 <?php
 
+namespace Alura\Banco;
+use Alura\Banco\RecursosHumanos\Titular;
 class Conta
 {
-    private $titular;
-    private $saldo;
+    private Titular $titular;
+    private float $saldo;
     private static $numeroDeContas = 0;
 
     public function __construct(Titular $titular)
